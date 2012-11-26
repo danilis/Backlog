@@ -69,5 +69,14 @@ namespace WindowsFormsApplication10
         {
             new Form3().Show();
         }
+
+        private void mainViewDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+    }
+
+    class numberOfNewCall
+    {
     }
 }

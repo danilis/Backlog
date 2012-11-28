@@ -3,9 +3,14 @@ Backlog
 This Project is develop by Backlog team:
 
 Natan Braslavskiy
+
 Dima Movchan
+
 Anton Litovka
+
 Danil Iskusnov
+
+
 
 
 Poduct is designed to trace progress of projects who use scrum system.

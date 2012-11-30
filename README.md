@@ -1,23 +1,50 @@
-Backlog[](http://cloud.github.com/downloads/danilis/Backlog/Logo.JPG)
+Backlog
 ==========
-This Project is develop by Backlog team:
+![Backlog](http://cloud.github.com/downloads/danilis/Backlog/Logo.JPG)
 
-Natan Braslavskiy
+### <u>This Project is develop by Backlog team:</u>
 
-Dima Movchan
+* Natan Braslavskiy
 
-Anton Litovka
+* Dima Movchan
 
-Danil Iskusnov
+* Anton Litovka
 
+* Danil Iskusnov
 
+***
 
+### <u>Clients and sponsors:</u>
 
-Poduct is designed to trace progress of projects who use scrum system.
+* Intel Jerusalem
+
+***
+
+### <u>Main target:</u>
+
+* Poduct is designed to trace progress of projects who use scrum system.
+
+***
+
+### <u>Technical structure:</u>
+
+<b>Our project is divided into 3 parts:</b>
+
+* Database will be managed via ADO.NET, in which we going to save data about the sprint.
+
+* Logic part is responsible for the connection between DB and external view of the program (GUI), for math calculations and for sprint managing. Will be implemented in C#.
+
+* GUI will display information about sprint, for example: a stories, tasks, working dates and etc. Also will display graphic of the progres. Also will be implemented in C#
+
+***
+
+### <u>Project progress:</u>
+
+All progress of this project is [here](https://github.com/danilis/Backlog/wiki/Our-progress)
+
+***
 
 All info about project is in home site: https://github.com/danilis/Backlog/wiki. 
 Latest version of project is also on main site.
 
-Using product is very easy and intuitive.
-
-Bugs and error logs may be sent to email: product_backlog_se_2013@gmail.com
+Bugs and error logs may be sent to email: nish05@walla.co.il

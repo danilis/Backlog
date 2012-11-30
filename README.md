@@ -26,7 +26,7 @@ Backlog
 
 ***
 
-### <u>Technical structure:</u>
+### <u>Technical structure</u>
 
 <b>Our project is divided into 3 parts:</b>
 
@@ -36,15 +36,17 @@ Backlog
 
 * GUI will display information about sprint, for example: a stories, tasks, working dates and etc. Also will display graphic of the progres. Also will be implemented in C#
 
+[Here](https://github.com/danilis/Backlog/wiki/Deployment-Diagram) you can see the basic logic structure of project.
 ***
 
 ### <u>Project progress:</u>
 
-All progress of this project is [here](https://github.com/danilis/Backlog/wiki/Our-progress)
+All progress of this project is [here](https://github.com/danilis/Backlog/wiki/Our-progress).
 
 ***
 
-All info about project is in home site: https://github.com/danilis/Backlog/wiki. 
-Latest version of project is also on main site.
+### <u>Staff:</u>
 
-Bugs and error logs may be sent to email: nish05@walla.co.il
+All the relevat information about project is in home site: [wiki](https://github.com/danilis/Backlog/wiki). 
+
+Bugs and error logs may be sent to [email](nish05@walla.co.il).

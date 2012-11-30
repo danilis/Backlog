@@ -45,7 +45,7 @@ All progress of this project is [here](https://github.com/danilis/Backlog/wiki/O
 
 ***
 
-### <u>Stгff:</u>
+### <u>Stuff:</u>
 
 All the relevat information about project is in home site: [wiki](https://github.com/danilis/Backlog/wiki). 
 

@@ -513,7 +513,7 @@ SELECT Programmer_ID, Day, Work_hours FROM Work_hours WHERE (Day = @Day) AND (Pr
   <xs:element name="Database1DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Database1DataSet" msprop:Generator_UserDSName="Database1DataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Data" msprop:Generator_TableClassName="DataDataTable" msprop:Generator_TableVarName="tableData" msprop:Generator_TablePropName="Data" msprop:Generator_RowDeletingName="DataRowDeleting" msprop:Generator_UserTableName="Data" msprop:Generator_RowChangingName="DataRowChanging" msprop:Generator_RowEvHandlerName="DataRowChangeEventHandler" msprop:Generator_RowDeletedName="DataRowDeleted" msprop:Generator_RowEvArgName="DataRowChangeEvent" msprop:Generator_RowChangedName="DataRowChanged" msprop:Generator_RowClassName="DataRow">
+        <xs:element name="Data" msprop:Generator_TableClassName="DataDataTable" msprop:Generator_TableVarName="tableData" msprop:Generator_RowChangedName="DataRowChanged" msprop:Generator_TablePropName="Data" msprop:Generator_RowDeletingName="DataRowDeleting" msprop:Generator_RowChangingName="DataRowChanging" msprop:Generator_RowEvHandlerName="DataRowChangeEventHandler" msprop:Generator_RowDeletedName="DataRowDeleted" msprop:Generator_RowClassName="DataRow" msprop:Generator_UserTableName="Data" msprop:Generator_RowEvArgName="DataRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Day_Status" msprop:Generator_ColumnVarNameInTable="columnDay_Status" msprop:Generator_ColumnPropNameInRow="Day_Status" msprop:Generator_ColumnPropNameInTable="Day_StatusColumn" msprop:Generator_UserColumnName="Day_Status" type="xs:int" minOccurs="0" />
@@ -521,7 +521,7 @@ SELECT Programmer_ID, Day, Work_hours FROM Work_hours WHERE (Day = @Day) AND (Pr
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="in" msprop:Generator_TableClassName="inDataTable" msprop:Generator_TableVarName="tablein" msprop:Generator_TablePropName="_in" msprop:Generator_RowDeletingName="inRowDeleting" msprop:Generator_UserTableName="in" msprop:Generator_RowChangingName="inRowChanging" msprop:Generator_RowEvHandlerName="inRowChangeEventHandler" msprop:Generator_RowDeletedName="inRowDeleted" msprop:Generator_RowEvArgName="inRowChangeEvent" msprop:Generator_RowChangedName="inRowChanged" msprop:Generator_RowClassName="inRow">
+        <xs:element name="in" msprop:Generator_TableClassName="inDataTable" msprop:Generator_TableVarName="tablein" msprop:Generator_RowChangedName="inRowChanged" msprop:Generator_TablePropName="_in" msprop:Generator_RowDeletingName="inRowDeleting" msprop:Generator_RowChangingName="inRowChanging" msprop:Generator_RowEvHandlerName="inRowChangeEventHandler" msprop:Generator_RowDeletedName="inRowDeleted" msprop:Generator_RowClassName="inRow" msprop:Generator_UserTableName="in" msprop:Generator_RowEvArgName="inRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Story_ID" msprop:Generator_ColumnVarNameInTable="columnStory_ID" msprop:Generator_ColumnPropNameInRow="Story_ID" msprop:Generator_ColumnPropNameInTable="Story_IDColumn" msprop:Generator_UserColumnName="Story_ID" type="xs:int" />
@@ -529,7 +529,7 @@ SELECT Programmer_ID, Day, Work_hours FROM Work_hours WHERE (Day = @Day) AND (Pr
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Programmer" msprop:Generator_TableClassName="ProgrammerDataTable" msprop:Generator_TableVarName="tableProgrammer" msprop:Generator_TablePropName="Programmer" msprop:Generator_RowDeletingName="ProgrammerRowDeleting" msprop:Generator_UserTableName="Programmer" msprop:Generator_RowChangingName="ProgrammerRowChanging" msprop:Generator_RowEvHandlerName="ProgrammerRowChangeEventHandler" msprop:Generator_RowDeletedName="ProgrammerRowDeleted" msprop:Generator_RowEvArgName="ProgrammerRowChangeEvent" msprop:Generator_RowChangedName="ProgrammerRowChanged" msprop:Generator_RowClassName="ProgrammerRow">
+        <xs:element name="Programmer" msprop:Generator_TableClassName="ProgrammerDataTable" msprop:Generator_TableVarName="tableProgrammer" msprop:Generator_RowChangedName="ProgrammerRowChanged" msprop:Generator_TablePropName="Programmer" msprop:Generator_RowDeletingName="ProgrammerRowDeleting" msprop:Generator_RowChangingName="ProgrammerRowChanging" msprop:Generator_RowEvHandlerName="ProgrammerRowChangeEventHandler" msprop:Generator_RowDeletedName="ProgrammerRowDeleted" msprop:Generator_RowClassName="ProgrammerRow" msprop:Generator_UserTableName="Programmer" msprop:Generator_RowEvArgName="ProgrammerRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -545,7 +545,7 @@ SELECT Programmer_ID, Day, Work_hours FROM Work_hours WHERE (Day = @Day) AND (Pr
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Sprint" msprop:Generator_TableClassName="SprintDataTable" msprop:Generator_TableVarName="tableSprint" msprop:Generator_TablePropName="Sprint" msprop:Generator_RowDeletingName="SprintRowDeleting" msprop:Generator_UserTableName="Sprint" msprop:Generator_RowChangingName="SprintRowChanging" msprop:Generator_RowEvHandlerName="SprintRowChangeEventHandler" msprop:Generator_RowDeletedName="SprintRowDeleted" msprop:Generator_RowEvArgName="SprintRowChangeEvent" msprop:Generator_RowChangedName="SprintRowChanged" msprop:Generator_RowClassName="SprintRow">
+        <xs:element name="Sprint" msprop:Generator_TableClassName="SprintDataTable" msprop:Generator_TableVarName="tableSprint" msprop:Generator_RowChangedName="SprintRowChanged" msprop:Generator_TablePropName="Sprint" msprop:Generator_RowDeletingName="SprintRowDeleting" msprop:Generator_RowChangingName="SprintRowChanging" msprop:Generator_RowEvHandlerName="SprintRowChangeEventHandler" msprop:Generator_RowDeletedName="SprintRowDeleted" msprop:Generator_RowClassName="SprintRow" msprop:Generator_UserTableName="Sprint" msprop:Generator_RowEvArgName="SprintRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Beginning_Day" msprop:Generator_ColumnVarNameInTable="columnBeginning_Day" msprop:Generator_ColumnPropNameInRow="Beginning_Day" msprop:Generator_ColumnPropNameInTable="Beginning_DayColumn" msprop:Generator_UserColumnName="Beginning_Day" type="xs:dateTime" />
@@ -553,7 +553,7 @@ SELECT Programmer_ID, Day, Work_hours FROM Work_hours WHERE (Day = @Day) AND (Pr
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Story" msprop:Generator_TableClassName="StoryDataTable" msprop:Generator_TableVarName="tableStory" msprop:Generator_TablePropName="Story" msprop:Generator_RowDeletingName="StoryRowDeleting" msprop:Generator_UserTableName="Story" msprop:Generator_RowChangingName="StoryRowChanging" msprop:Generator_RowEvHandlerName="StoryRowChangeEventHandler" msprop:Generator_RowDeletedName="StoryRowDeleted" msprop:Generator_RowEvArgName="StoryRowChangeEvent" msprop:Generator_RowChangedName="StoryRowChanged" msprop:Generator_RowClassName="StoryRow">
+        <xs:element name="Story" msprop:Generator_TableClassName="StoryDataTable" msprop:Generator_TableVarName="tableStory" msprop:Generator_RowChangedName="StoryRowChanged" msprop:Generator_TablePropName="Story" msprop:Generator_RowDeletingName="StoryRowDeleting" msprop:Generator_RowChangingName="StoryRowChanging" msprop:Generator_RowEvHandlerName="StoryRowChangeEventHandler" msprop:Generator_RowDeletedName="StoryRowDeleted" msprop:Generator_RowClassName="StoryRow" msprop:Generator_UserTableName="Story" msprop:Generator_RowEvArgName="StoryRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -579,7 +579,7 @@ SELECT Programmer_ID, Day, Work_hours FROM Work_hours WHERE (Day = @Day) AND (Pr
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Task" msprop:Generator_TableClassName="TaskDataTable" msprop:Generator_TableVarName="tableTask" msprop:Generator_TablePropName="Task" msprop:Generator_RowDeletingName="TaskRowDeleting" msprop:Generator_UserTableName="Task" msprop:Generator_RowChangingName="TaskRowChanging" msprop:Generator_RowEvHandlerName="TaskRowChangeEventHandler" msprop:Generator_RowDeletedName="TaskRowDeleted" msprop:Generator_RowEvArgName="TaskRowChangeEvent" msprop:Generator_RowChangedName="TaskRowChanged" msprop:Generator_RowClassName="TaskRow">
+        <xs:element name="Task" msprop:Generator_TableClassName="TaskDataTable" msprop:Generator_TableVarName="tableTask" msprop:Generator_RowChangedName="TaskRowChanged" msprop:Generator_TablePropName="Task" msprop:Generator_RowDeletingName="TaskRowDeleting" msprop:Generator_RowChangingName="TaskRowChanging" msprop:Generator_RowEvHandlerName="TaskRowChangeEventHandler" msprop:Generator_RowDeletedName="TaskRowDeleted" msprop:Generator_RowClassName="TaskRow" msprop:Generator_UserTableName="Task" msprop:Generator_RowEvArgName="TaskRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -596,7 +596,7 @@ SELECT Programmer_ID, Day, Work_hours FROM Work_hours WHERE (Day = @Day) AND (Pr
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Work_hours" msprop:Generator_TableClassName="Work_hoursDataTable" msprop:Generator_TableVarName="tableWork_hours" msprop:Generator_TablePropName="Work_hours" msprop:Generator_RowDeletingName="Work_hoursRowDeleting" msprop:Generator_UserTableName="Work_hours" msprop:Generator_RowChangingName="Work_hoursRowChanging" msprop:Generator_RowEvHandlerName="Work_hoursRowChangeEventHandler" msprop:Generator_RowDeletedName="Work_hoursRowDeleted" msprop:Generator_RowEvArgName="Work_hoursRowChangeEvent" msprop:Generator_RowChangedName="Work_hoursRowChanged" msprop:Generator_RowClassName="Work_hoursRow">
+        <xs:element name="Work_hours" msprop:Generator_TableClassName="Work_hoursDataTable" msprop:Generator_TableVarName="tableWork_hours" msprop:Generator_RowChangedName="Work_hoursRowChanged" msprop:Generator_TablePropName="Work_hours" msprop:Generator_RowDeletingName="Work_hoursRowDeleting" msprop:Generator_RowChangingName="Work_hoursRowChanging" msprop:Generator_RowEvHandlerName="Work_hoursRowChangeEventHandler" msprop:Generator_RowDeletedName="Work_hoursRowDeleted" msprop:Generator_RowClassName="Work_hoursRow" msprop:Generator_UserTableName="Work_hours" msprop:Generator_RowEvArgName="Work_hoursRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Programmer_ID" msprop:Generator_ColumnVarNameInTable="columnProgrammer_ID" msprop:Generator_ColumnPropNameInRow="Programmer_ID" msprop:Generator_ColumnPropNameInTable="Programmer_IDColumn" msprop:Generator_UserColumnName="Programmer_ID" type="xs:int" />
@@ -605,7 +605,7 @@ SELECT Programmer_ID, Day, Work_hours FROM Work_hours WHERE (Day = @Day) AND (Pr
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="mainView" msprop:Generator_TableClassName="mainViewDataTable" msprop:Generator_TableVarName="tablemainView" msprop:Generator_TablePropName="mainView" msprop:Generator_RowDeletingName="mainViewRowDeleting" msprop:Generator_UserTableName="mainView" msprop:Generator_RowChangingName="mainViewRowChanging" msprop:Generator_RowEvHandlerName="mainViewRowChangeEventHandler" msprop:Generator_RowDeletedName="mainViewRowDeleted" msprop:Generator_RowEvArgName="mainViewRowChangeEvent" msprop:Generator_RowChangedName="mainViewRowChanged" msprop:Generator_RowClassName="mainViewRow">
+        <xs:element name="mainView" msprop:Generator_TableClassName="mainViewDataTable" msprop:Generator_TableVarName="tablemainView" msprop:Generator_RowChangedName="mainViewRowChanged" msprop:Generator_TablePropName="mainView" msprop:Generator_RowDeletingName="mainViewRowDeleting" msprop:Generator_RowChangingName="mainViewRowChanging" msprop:Generator_RowEvHandlerName="mainViewRowChangeEventHandler" msprop:Generator_RowDeletedName="mainViewRowDeleted" msprop:Generator_RowClassName="mainViewRow" msprop:Generator_UserTableName="mainView" msprop:Generator_RowEvArgName="mainViewRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="NAME" msprop:Generator_ColumnVarNameInTable="columnNAME" msprop:Generator_ColumnPropNameInRow="NAME" msprop:Generator_ColumnPropNameInTable="NAMEColumn" msprop:Generator_UserColumnName="NAME" minOccurs="0">
@@ -656,7 +656,7 @@ SELECT Programmer_ID, Day, Work_hours FROM Work_hours WHERE (Day = @Day) AND (Pr
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="ProgramerView" msprop:Generator_TableClassName="ProgramerViewDataTable" msprop:Generator_TableVarName="tableProgramerView" msprop:Generator_TablePropName="ProgramerView" msprop:Generator_RowDeletingName="ProgramerViewRowDeleting" msprop:Generator_UserTableName="ProgramerView" msprop:Generator_RowChangingName="ProgramerViewRowChanging" msprop:Generator_RowEvHandlerName="ProgramerViewRowChangeEventHandler" msprop:Generator_RowDeletedName="ProgramerViewRowDeleted" msprop:Generator_RowEvArgName="ProgramerViewRowChangeEvent" msprop:Generator_RowChangedName="ProgramerViewRowChanged" msprop:Generator_RowClassName="ProgramerViewRow">
+        <xs:element name="ProgramerView" msprop:Generator_TableClassName="ProgramerViewDataTable" msprop:Generator_TableVarName="tableProgramerView" msprop:Generator_RowChangedName="ProgramerViewRowChanged" msprop:Generator_TablePropName="ProgramerView" msprop:Generator_RowDeletingName="ProgramerViewRowDeleting" msprop:Generator_RowChangingName="ProgramerViewRowChanging" msprop:Generator_RowEvHandlerName="ProgramerViewRowChangeEventHandler" msprop:Generator_RowDeletedName="ProgramerViewRowDeleted" msprop:Generator_RowClassName="ProgramerViewRow" msprop:Generator_UserTableName="ProgramerView" msprop:Generator_RowEvArgName="ProgramerViewRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="NAME" msprop:Generator_ColumnVarNameInTable="columnNAME" msprop:Generator_ColumnPropNameInRow="NAME" msprop:Generator_ColumnPropNameInTable="NAMEColumn" msprop:Generator_UserColumnName="NAME" minOccurs="0">
@@ -671,7 +671,7 @@ SELECT Programmer_ID, Day, Work_hours FROM Work_hours WHERE (Day = @Day) AND (Pr
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Table1" msprop:Generator_TableClassName="Table1DataTable" msprop:Generator_TableVarName="tableTable1" msprop:Generator_TablePropName="Table1" msprop:Generator_RowDeletingName="Table1RowDeleting" msprop:Generator_UserTableName="Table1" msprop:Generator_RowChangingName="Table1RowChanging" msprop:Generator_RowEvHandlerName="Table1RowChangeEventHandler" msprop:Generator_RowDeletedName="Table1RowDeleted" msprop:Generator_RowEvArgName="Table1RowChangeEvent" msprop:Generator_RowChangedName="Table1RowChanged" msprop:Generator_RowClassName="Table1Row">
+        <xs:element name="Table1" msprop:Generator_TableClassName="Table1DataTable" msprop:Generator_TableVarName="tableTable1" msprop:Generator_RowChangedName="Table1RowChanged" msprop:Generator_TablePropName="Table1" msprop:Generator_RowDeletingName="Table1RowDeleting" msprop:Generator_RowChangingName="Table1RowChanging" msprop:Generator_RowEvHandlerName="Table1RowChangeEventHandler" msprop:Generator_RowDeletedName="Table1RowDeleted" msprop:Generator_RowClassName="Table1Row" msprop:Generator_UserTableName="Table1" msprop:Generator_RowEvArgName="Table1RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="A" msprop:Generator_ColumnVarNameInTable="columnA" msprop:Generator_ColumnPropNameInRow="A" msprop:Generator_ColumnPropNameInTable="AColumn" msprop:Generator_UserColumnName="A" minOccurs="0">

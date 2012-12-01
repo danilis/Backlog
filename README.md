@@ -37,6 +37,11 @@ Backlog
 * GUI will display information about sprint, for example: a stories, tasks, working dates and etc. Also will display graphic of the progres. Also will be implemented in C#
 
 [Here](https://github.com/danilis/Backlog/wiki/Deployment-Diagram) you can see the basic logic structure of project.
+
+***
+
+[User guide](https://github.com/danilis/Backlog/wiki/User-guide)
+
 ***
 
 ### <u>Project progress:</u>

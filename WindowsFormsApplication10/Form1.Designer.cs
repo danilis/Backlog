@@ -32,7 +32,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-
             this.components = new System.ComponentModel.Container();
             this.database1DataSet = new WindowsFormsApplication10.Database1DataSet();
             this.dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -48,26 +47,18 @@
             this.bToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.b1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.b2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.c1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.windowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
             this.mainViewDataGridView = new System.Windows.Forms.DataGridView();
-            this.mainViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.mainViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mainViewTableAdapter = new WindowsFormsApplication10.Database1DataSetTableAdapters.mainViewTableAdapter();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            for (int i = 0; i < numberOfNewCall; i++)
-            {
-                this.dataGridViewTextBoxArray[i] = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            }
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.taskBindingSource)).BeginInit();
@@ -111,7 +102,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(3, 472);
+            this.button1.Location = new System.Drawing.Point(4, 530);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
@@ -129,10 +120,11 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aToolStripMenuItem,
             this.bToolStripMenuItem,
-            this.cToolStripMenuItem});
+            this.cToolStripMenuItem,
+            this.windowToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(903, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1260, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -142,189 +134,153 @@
             this.a1ToolStripMenuItem,
             this.a2ToolStripMenuItem});
             this.aToolStripMenuItem.Name = "aToolStripMenuItem";
-            this.aToolStripMenuItem.Size = new System.Drawing.Size(27, 20);
-            this.aToolStripMenuItem.Text = "A";
+            this.aToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.aToolStripMenuItem.Text = "Team";
+            this.aToolStripMenuItem.Click += new System.EventHandler(this.aToolStripMenuItem_Click);
             // 
             // a1ToolStripMenuItem
             // 
             this.a1ToolStripMenuItem.Name = "a1ToolStripMenuItem";
-            this.a1ToolStripMenuItem.Size = new System.Drawing.Size(88, 22);
-            this.a1ToolStripMenuItem.Text = "A1";
+            this.a1ToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.a1ToolStripMenuItem.Text = "Management";
             this.a1ToolStripMenuItem.Click += new System.EventHandler(this.a1ToolStripMenuItem_Click);
             // 
             // a2ToolStripMenuItem
             // 
             this.a2ToolStripMenuItem.Name = "a2ToolStripMenuItem";
-            this.a2ToolStripMenuItem.Size = new System.Drawing.Size(88, 22);
-            this.a2ToolStripMenuItem.Text = "A2";
+            this.a2ToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.a2ToolStripMenuItem.Text = "Settings";
             this.a2ToolStripMenuItem.Click += new System.EventHandler(this.a2ToolStripMenuItem_Click);
             // 
             // bToolStripMenuItem
             // 
             this.bToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.b1ToolStripMenuItem,
-            this.b2ToolStripMenuItem});
+            this.b2ToolStripMenuItem,
+            this.settingsToolStripMenuItem});
             this.bToolStripMenuItem.Name = "bToolStripMenuItem";
-            this.bToolStripMenuItem.Size = new System.Drawing.Size(26, 20);
-            this.bToolStripMenuItem.Text = "B";
+            this.bToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.bToolStripMenuItem.Text = "Sprint";
             // 
             // b1ToolStripMenuItem
             // 
             this.b1ToolStripMenuItem.Name = "b1ToolStripMenuItem";
-            this.b1ToolStripMenuItem.Size = new System.Drawing.Size(87, 22);
-            this.b1ToolStripMenuItem.Text = "B1";
+            this.b1ToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.b1ToolStripMenuItem.Text = "Previous";
             // 
             // b2ToolStripMenuItem
             // 
             this.b2ToolStripMenuItem.Name = "b2ToolStripMenuItem";
-            this.b2ToolStripMenuItem.Size = new System.Drawing.Size(87, 22);
-            this.b2ToolStripMenuItem.Text = "B2";
+            this.b2ToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.b2ToolStripMenuItem.Text = "New sprint";
+            // 
+            // settingsToolStripMenuItem
+            // 
+            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.settingsToolStripMenuItem.Text = "Settings";
             // 
             // cToolStripMenuItem
             // 
             this.cToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.c1ToolStripMenuItem});
             this.cToolStripMenuItem.Name = "cToolStripMenuItem";
-            this.cToolStripMenuItem.Size = new System.Drawing.Size(27, 20);
-            this.cToolStripMenuItem.Text = "C";
+            this.cToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.cToolStripMenuItem.Text = "Analyze";
             // 
             // c1ToolStripMenuItem
             // 
             this.c1ToolStripMenuItem.Name = "c1ToolStripMenuItem";
-            this.c1ToolStripMenuItem.Size = new System.Drawing.Size(88, 22);
-            this.c1ToolStripMenuItem.Text = "C1";
+            this.c1ToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.c1ToolStripMenuItem.Text = "Settings";
+            // 
+            // windowToolStripMenuItem
+            // 
+            this.windowToolStripMenuItem.Name = "windowToolStripMenuItem";
+            this.windowToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
+            this.windowToolStripMenuItem.Text = "Window";
+            this.windowToolStripMenuItem.Click += new System.EventHandler(this.Form1_Load);
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(0, 27);
+            this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(903, 521);
+            this.tabControl1.Size = new System.Drawing.Size(1260, 497);
             this.tabControl1.TabIndex = 4;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.mainViewDataGridView);
-            this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(895, 495);
+            this.tabPage1.Size = new System.Drawing.Size(1252, 471);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.Text = "Sprint Plan";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(40, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "label1";
+            // 
             // mainViewDataGridView
             // 
-            this.mainViewDataGridView.AutoGenerateColumns = false;
             this.mainViewDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.mainViewDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn15,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn6});
-            this.mainViewDataGridView.DataSource = this.mainViewBindingSource;
-            this.mainViewDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { this.dataGridViewTextBoxColumn12 });
-            for (int i = 0; i < numberOfNewCall; i++)
-            {
-                this.mainViewDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { this.dataGridViewTextBoxArray[i] });
-            }
-            this.mainViewDataGridView.Location = new System.Drawing.Point(0, 0);
+            this.mainViewDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainViewDataGridView.Location = new System.Drawing.Point(3, 3);
             this.mainViewDataGridView.Name = "mainViewDataGridView";
-            this.mainViewDataGridView.Size = new System.Drawing.Size(892, 466);
+            this.mainViewDataGridView.Size = new System.Drawing.Size(1246, 465);
             this.mainViewDataGridView.TabIndex = 2;
             this.mainViewDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.mainViewDataGridView_CellContentClick);
-
-            // 
-            // mainViewBindingSource
-            // 
-            this.mainViewBindingSource.DataMember = "mainView";
-            this.mainViewBindingSource.DataSource = this.database1DataSet;
             // 
             // tabPage2
             // 
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(895, 495);
+            this.tabPage2.Size = new System.Drawing.Size(1252, 471);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.Text = "Risk Graph";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1252, 471);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Story Progress";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // mainViewBindingSource
+            // 
+            this.mainViewBindingSource.DataMember = "mainView";
+            this.mainViewBindingSource.DataSource = this.database1DataSet;
             // 
             // mainViewTableAdapter
             // 
             this.mainViewTableAdapter.ClearBeforeFill = true;
             // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "Work_Status";
-            this.dataGridViewTextBoxColumn11.HeaderText = "Work_Status";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "Begin";
-            this.dataGridViewTextBoxColumn12.HeaderText = "Begin";
-            this.dataGridViewTextBoxColumn12.Name = "Begin";
-            // 
-            // dataGridViewTextBoxArray
-            // 
-            for (int i = 0; i < numberOfNewCall; i++)
-            {
-                this.dataGridViewTextBoxArray[i].DataPropertyName = "Day " + i;
-                this.dataGridViewTextBoxArray[i].HeaderText = "Day " + i;
-                this.dataGridViewTextBoxArray[i].Name = "Day " + i;
-                this.dataGridViewTextBoxArray[i].Width = 30;
-            }
-            // 
-            // dataGridViewTextBoxColumn15
-            // 
-            this.dataGridViewTextBoxColumn15.DataPropertyName = "Programmer_ID";
-            this.dataGridViewTextBoxColumn15.HeaderText = "Programmer_ID";
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Priority";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Priority";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Story_ID";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Story_ID";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Task_Owner";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Task_Owner";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Expected_Work_Hours";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Expected_Work_Hours";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Description";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Description";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(903, 551);
+            this.ClientSize = new System.Drawing.Size(1260, 557);
             this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
@@ -337,6 +293,7 @@
             this.menuStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mainViewDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainViewBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -363,6 +320,12 @@
         private System.Windows.Forms.ToolStripMenuItem cToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem c1ToolStripMenuItem;
         private System.Windows.Forms.TabControl tabControl1;
+
+        public System.Windows.Forms.TabControl TabControl1
+        {
+            get { return tabControl1; }
+            set { tabControl1 = value; }
+        }
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.BindingSource mainViewBindingSource;
@@ -378,6 +341,16 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
 
         private System.Windows.Forms.DataGridViewTextBoxColumn[] dataGridViewTextBoxArray = new System.Windows.Forms.DataGridViewTextBoxColumn[numberOfNewCall];
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem windowToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
+
+        public System.Windows.Forms.Label Label1
+        {
+            get { return label1; }
+            set { label1 = value; }
+        }
     }
 }
 

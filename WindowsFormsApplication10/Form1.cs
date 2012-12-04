@@ -74,6 +74,21 @@ namespace WindowsFormsApplication10
         {
 
         }
+
+        private void aToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void windowToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Window a = new Window();
+            a.Show();
+            a.RadioButton2.Checked = true;
+        }
+
+
+
     }
 
     class numberOfNewCall

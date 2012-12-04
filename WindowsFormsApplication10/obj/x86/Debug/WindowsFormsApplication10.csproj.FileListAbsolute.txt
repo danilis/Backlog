@@ -1,0 +1,16 @@
+C:\Users\Daniel\Documents\GitHub\Backlog\WindowsFormsApplication10\bin\Debug\WindowsFormsApplication10.exe.config
+C:\Users\Daniel\Documents\GitHub\Backlog\WindowsFormsApplication10\bin\Debug\Database1.mdf
+C:\Users\Daniel\Documents\GitHub\Backlog\WindowsFormsApplication10\bin\Debug\Database1_log.ldf
+C:\Users\Daniel\Documents\GitHub\Backlog\WindowsFormsApplication10\bin\Debug\WindowsFormsApplication10.exe
+C:\Users\Daniel\Documents\GitHub\Backlog\WindowsFormsApplication10\bin\Debug\WindowsFormsApplication10.pdb
+C:\Users\Daniel\Documents\GitHub\Backlog\WindowsFormsApplication10\bin\Debug\EntityFramework.dll
+C:\Users\Daniel\Documents\GitHub\Backlog\WindowsFormsApplication10\bin\Debug\EntityFramework.xml
+C:\Users\Daniel\Documents\GitHub\Backlog\WindowsFormsApplication10\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Daniel\Documents\GitHub\Backlog\WindowsFormsApplication10\obj\x86\Debug\WindowsFormsApplication10.Form1.resources
+C:\Users\Daniel\Documents\GitHub\Backlog\WindowsFormsApplication10\obj\x86\Debug\WindowsFormsApplication10.Form2.resources
+C:\Users\Daniel\Documents\GitHub\Backlog\WindowsFormsApplication10\obj\x86\Debug\WindowsFormsApplication10.Form3.resources
+C:\Users\Daniel\Documents\GitHub\Backlog\WindowsFormsApplication10\obj\x86\Debug\WindowsFormsApplication10.Properties.Resources.resources
+C:\Users\Daniel\Documents\GitHub\Backlog\WindowsFormsApplication10\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Daniel\Documents\GitHub\Backlog\WindowsFormsApplication10\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Daniel\Documents\GitHub\Backlog\WindowsFormsApplication10\obj\x86\Debug\WindowsFormsApplication10.exe
+C:\Users\Daniel\Documents\GitHub\Backlog\WindowsFormsApplication10\obj\x86\Debug\WindowsFormsApplication10.pdb

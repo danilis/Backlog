@@ -53,13 +53,13 @@ namespace WindowsFormsApplication13
 
 
             // TODO: This line of code loads data into the 'database1DataSet1.Task' table. You can move, or remove it, as needed.
-            this.taskTableAdapter.Fill(this.database1DataSet1.Task);
+            //this.taskTableAdapter.Fill(this.database1DataSet1.Task);
             // TODO: This line of code loads data into the 'database1DataSet1.Sprint' table. You can move, or remove it, as needed.
-            this.sprintTableAdapter.Fill(this.database1DataSet1.Sprint);
+            //this.sprintTableAdapter.Fill(this.database1DataSet1.Sprint);
             // TODO: This line of code loads data into the 'database1DataSet1.Programmer' table. You can move, or remove it, as needed.
-            this.programmerTableAdapter.Fill(this.database1DataSet1.Programmer);
+            //this.programmerTableAdapter.Fill(this.database1DataSet1.Programmer);
             // TODO: This line of code loads data into the 'database1DataSet1.Story' table. You can move, or remove it, as needed.
-            this.storyTableAdapter.Fill(this.database1DataSet1.Story);
+            //this.storyTableAdapter.Fill(this.database1DataSet1.Story);
             // TODO: This line of code loads data into the 'database1DataSet1.Programmer' table. You can move, or remove it, as needed.
 
         }

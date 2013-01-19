@@ -20,28 +20,31 @@ namespace WindowsFormsApplication13
 
         public int GeneralGetMaximumTablesSize()
         {
+            
+            //change name to more readable
             int ans = 0;
-            if (SprintGetTableLength() > ans)
-                ans = SprintGetTableLength();
-            if (TaskGetTaskTableLength() > ans)
-                ans = TaskGetTaskTableLength();
-            if (StoryGetStoryTableLength() > ans)
-                ans = StoryGetStoryTableLength();
-            if (ProgrammerGetProgrammerTableLength() > ans)
-                ans = ProgrammerGetProgrammerTableLength();
-            if (WorkHoursGetWorkHoursTableLength() > ans)
-                ans = WorkHoursGetWorkHoursTableLength();
-            if (StoryInSprintGetStoryInSprintTableLength() > ans)
-                ans = StoryInSprintGetStoryInSprintTableLength();
-            return ans;
+            if (SprintGetTableLength() > maximumTablesSize)
+                maximumTablesSize = SprintGetTableLength();
+            if (TaskGetTaskTableLength() > maximumTablesSize)
+                maximumTablesSize = TaskGetTaskTableLength();
+            if (StoryGetStoryTableLength() > maximumTablesSize)
+                maximumTablesSize = StoryGetStoryTableLength();
+            if (ProgrammerGetProgrammerTableLength() > maximumTablesSize)
+                maximumTablesSize = ProgrammerGetProgrammerTableLength();
+            if (WorkHoursGetWorkHoursTableLength() > maximumTablesSize)
+                maximumTablesSize = WorkHoursGetWorkHoursTableLength();
+            if (StoryInSprintGetStoryInSprintTableLength() > maximumTablesSize)
+                maximumTablesSize = StoryInSprintGetStoryInSprintTableLength();
+            return maximumTablesSize;
         }
 
         /*************************************************************************************************
          **************************  Sprint  ************************************************************
          */
 
-        public int SprintGetTableLength()
-        {
+
+        //create new method for repetitive code 
+        private int executeQuery(string query){
             SqlConnection conn = new SqlConnection(CONNECTION_STRING);
             try
             {
@@ -51,7 +54,6 @@ namespace WindowsFormsApplication13
             {
                 return -1;
             }
-            string str = "Select Count(*) From Sprint";
             SqlCommand command = new SqlCommand(str, conn);
             SqlDataReader reader = command.ExecuteReader();
             reader.Read();
@@ -59,6 +61,17 @@ namespace WindowsFormsApplication13
             reader.Close();
             conn.Close();
             return ans;
+        }
+        
+        
+        
+        
+        public int SprintGetTableLength()
+        {
+            
+            string query = "Select Count(*) From Sprint";
+            return executeQuery(query);
+            
         }
 
 
@@ -235,32 +248,16 @@ namespace WindowsFormsApplication13
             return ans;
         }
 
+
+        //use created method
         public int SprintGetRemainWorkingDays()
         {
             DateTime ending = SprintGetEndingDay();
             DateTime curr = DateGetCurrentDay();
             if (ending == DateTime.MinValue || curr == DateTime.MinValue)
                 return -1;
-            SqlConnection conn = new SqlConnection(CONNECTION_STRING);
-            try
-            {
-                conn.Open();
-            }
-            catch (Exception)
-            {
-                return -1;
-            }
-            int ans;
-
-            string qStr = "SELECT Count(*) FROM Date Where Date_Day > @curr_day and Date_Day_status = 1";
-            SqlCommand sqlCom = new SqlCommand(qStr, conn);
-            sqlCom.Parameters.AddWithValue("@curr_day", curr);
-            SqlDataReader reader = sqlCom.ExecuteReader();
-            reader.Read();
-            ans = Convert.ToInt32(reader[0].ToString());
-            conn.Close();
-            //int ans = (int)Math.Floor((ending - curr).TotalDays);    /// calculation
-            return ans;
+            string query = "SELECT Count(*) FROM Date Where Date_Day > @curr_day and Date_Day_status = 1";
+            return executeQuery(query);
         }
 
         // return number of days passed from sprint beginnig
@@ -685,25 +682,13 @@ namespace WindowsFormsApplication13
             conn.Close();
             return 0;
         }
-
+    
+    
+        //use created method
         public int StoryGetStoryPriority(int story_ID)
         {
-            SqlConnection conn = new SqlConnection(CONNECTION_STRING);
-            try
-            {
-                conn.Open();
-            }
-            catch (Exception)
-            {
-                return -1;
-            }
-            string str = "Select Story_Priority From Story Where Story_ID = " + story_ID;
-            SqlCommand command = new SqlCommand(str, conn);
-            SqlDataReader reader = command.ExecuteReader();
-            reader.Read();
-            int ans = Convert.ToInt32(reader[0].ToString());
-            conn.Close();
-            return ans;
+            string query = "Select Story_Priority From Story Where Story_ID = " + story_ID;
+            return executeQuery(query;
         }
 
         public int StorySetStoryPriority(int story_ID, int priority)

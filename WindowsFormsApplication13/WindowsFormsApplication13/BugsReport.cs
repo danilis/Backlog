@@ -18,7 +18,11 @@ namespace WindowsFormsApplication13
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+            // do the same on klick
+           Random a = new Random();
+            int newW = a.Next(button1.Width, this.Width - button1.Width*2);
+            int newH = a.Next(button1.Height, this.Height - button1.Height);
+            this.button1.Location = new System.Drawing.Point(newH, newW);
         }
 
         private void button1_MouseHover(object sender, EventArgs e)

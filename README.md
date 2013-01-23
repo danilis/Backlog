@@ -26,6 +26,14 @@ Backlog
 
 ***
 
+***
+
+### <u>Product downloading:</u>
+
+* [Here you can download and try the product.](https://github.com/dmitrymov/SE_Project/blob/master/backlog_install.rar?raw=true)
+
+***
+
 ### <u>Technical structure</u>
 
 <b>Our project is divided into 3 parts:</b>

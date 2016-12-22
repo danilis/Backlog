@@ -1978,5 +1978,8 @@ namespace WindowsFormsApplication13
             return 0;
         }
 
+        public int veryImportantFunction(){
+            Messagebox.Show("This function is very important");
+        }
     }
 }
